@@ -227,3 +227,27 @@ import { get } from '@/common/api/user';
 import { get as getUser } from '@/common/api/user';
 // getUser()   这样就能知道是获取用户信息
 ```
+
+
+
+# 七、开发
+
+**windows、mac用户:**
+
+- 用hbuilderX打开`src`目录开发
+
+**linux用户:**
+
+```shell
+# 安装依赖
+$ npm install  
+
+# 运行
+$ npm run dev:h5
+
+# 打包
+$ npm build:h5
+```
+
+不支持app/小程序开发, 因为无法调试.  可以在开发完用hbuilderx打包   或者自行打包
+
