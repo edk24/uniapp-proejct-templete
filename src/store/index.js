@@ -1,21 +1,21 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-Vue.use(Vuex)
+import Vue from "vue";
+import Vuex from "vuex";
+Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
         // 域名
-        apiUrl: 'http://127.0.0.1/api/',
-        staticUrl: 'http://127.0.0.1/image/',
-        wsUrl: 'ws://edk24.com:778',
+        apiUrl: "http://127.0.0.1/api/",
+        staticUrl: "http://127.0.0.1/image/",
+        wsUrl: "ws://edk24.com:778",
 
         // 用户状态
         login: false,
-        token: '', // 用户token
+        token: "", // 用户登录token
         userInfo: {
-            id: 0,  // 用户id
-            name: '', // 用户昵称
-            avatar:'', // 头像url
-        }
+            id: 0, // 用户id
+            name: "", // 用户昵称
+            avatar: "", // 头像url
+        },
     },
     mutations: {
         login(state, provider) {
@@ -27,19 +27,19 @@ const store = new Vuex.Store({
         },
         logout(state) {
             state.login = false;
-            state.token = '';
-            state.userInfo.avatar = '';
-            state.userInfo.name = '';
+            state.token = "";
+            state.userInfo.avatar = "";
+            state.userInfo.name = "";
             state.userInfo.id = 0;
         },
     },
     getters: {
-        apiUrl: state => {
-            return state.apiUrl
+        apiUrl: (state) => {
+            return state.apiUrl;
         },
-        token: state => {
-            return state.token
-        }
-    }
-})
-export default store
+        staticUrl: (state) => {
+            return state.staticUrl;
+        },
+    },
+});
+export default store;
