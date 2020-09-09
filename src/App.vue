@@ -12,7 +12,9 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
+/* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
+	@import "uview-ui/index.scss";
 	/*每个页面公共css */
     /* 单行文字超出隐藏 */
     .ellipsis1 {
@@ -33,6 +35,4 @@
     .poster {
     	background-color: #E5E5E5;
     }
- 
-
 </style>

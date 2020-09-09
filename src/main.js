@@ -1,6 +1,8 @@
 import Vue from "vue";
 import App from "./App";
 import store from "@/store/index";
+import uView from "uview-ui";
+Vue.use(uView);
 // 注册全局组件
 import UniNavBar from "components/uni-nav-bar/uni-nav-bar.vue";
 import MescrollBody from "@/components/mescroll-uni/mescroll-body.vue";

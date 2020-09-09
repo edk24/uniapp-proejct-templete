@@ -1,4 +1,7 @@
 {
+    "easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
     "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
         {
             "path": "pages/index/index",
@@ -7,18 +10,6 @@
                 "app-plus": {
                     "titleNView": false
                 }
-            }
-        },
-        {
-            "path": "pages/template/page/page",
-            "style": {
-                "navigationBarTitleText": "单页上拉下拉"
-            }
-        },
-        {
-            "path": "pages/template/tabs_list/tabs_list",
-            "style": {
-                "navigationBarTitleText": "带tab的上拉下拉"
             }
         },
         {
